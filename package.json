@@ -1,0 +1,17 @@
+{
+  "name": "coupons",
+  "version": "0.1.0",
+  "description": "Coupons",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --harmony index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.0",
+    "mongoose": "^4.10.4"
+  }
+}
