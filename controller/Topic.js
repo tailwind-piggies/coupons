@@ -9,7 +9,7 @@ module.exports = function (router) {
     const offset = parseInt(ctx.query.offset) || 0
     const limit = parseInt(ctx.query.limit) || 10
 
-    ctx.body = await Topic.find().limit(limit).skip(offset).then((topics, err) => {
+    ctx.body = await Topic.find().sort({ createTime: -1 }).limit(limit).skip(offset).then((topics, err) => {
       if (!err) {
         return {
           success: true,
