@@ -16,8 +16,8 @@ const apiRouter = new KoaRouter({
 })
 
 // Import modules
-const topicController = require('./controller/Topic')
-topicController(apiRouter)
+const topicAction = require('./actions/Topic')
+topicAction(apiRouter)
 
 // Start
 app

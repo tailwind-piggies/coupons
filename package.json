@@ -4,7 +4,7 @@
   "description": "Coupons",
   "main": "index.js",
   "scripts": {
-    "dev": "node --harmony index.js"
+    "dev": "node index.js"
   },
   "author": "",
   "license": "ISC",
