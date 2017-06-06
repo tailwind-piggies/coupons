@@ -1,0 +1,8 @@
+apps:
+  -
+    script: ./index.js
+    env:
+      NODE_ENV: development
+    instances: 1
+    name: staging-coupons
+    exec_mode: cluster
