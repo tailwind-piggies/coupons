@@ -1,0 +1,17 @@
+machine:
+  node:
+    version: 8.0.0
+
+test:
+  override:
+    - npm run test
+
+deployment:
+  feature:
+    branch: /feature\/.*/
+    commands:
+      - sh deploy_staging.sh
+  develop:
+    branch: develop
+    commands:
+      - sh deploy_staging.sh
